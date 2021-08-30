@@ -1,0 +1,22 @@
+<form #taskform="ngForm" (submit)="createTask(taskform.value)">
+    <table>
+        <tr>
+            <td>Name</td>
+            <td> <input type="text" name="user" ngModel> </td>
+        </tr>
+        <tr>
+            <td>TaskName</td>
+            <td>  <input type="text" name="taskName" ngModel> </td>
+        </tr>
+        <tr>
+            <td>Duration</td>
+        <td> <input type="text" name="duration" ngModel></td>
+       </tr>
+       <tr>
+        <td></td>
+        <td> <input type="submit"> </td>
+   </tr>
+       
+    
+</table>
+</form>

@@ -1,0 +1,22 @@
+<h1>Todo Application</h1>
+<button routerLink="task">Create Task</button>
+<br/>
+<router-outlet></router-outlet>
+<table>
+<tr>
+  <th>ID</th>
+  <th>User Name</th>
+  <th>Task Name</th>
+  <th>Duration</th>
+</tr>
+<tr *ngFor="let task of tasks">
+  <td>{{task.id}}</td>
+  <td>{{task.user}}</td>
+  <td>{{task.taskName}}</td>
+  <td>{{task.duration}}</td>
+  <td><button>Update</button></td>
+  <td><button (click)="deleteTask(task.id)">Delete</button></td>
+</tr>
+
+
+</table>
